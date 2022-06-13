@@ -1,30 +1,46 @@
-print ("Type the number for the chosen operation")
-print ("Numbers in decimal form (float) are possible")
-print ("1, Addition")
-print ("2, Subtraction")
-print ("3, Multiplication")
-print ("4, Division")
+BooleanCheck = True
 
-Chosen_operation = input('Input Operation: ')
-x = float(input("Input the first number: "))
-y = float(input("Input the second number: "))
+while BooleanCheck:
+  print ("Type the number for the chosen operation")
+  print ("Numbers in decimal form (float) are possible")
+  print ("1: Addition")
+  print ("2: Subtraction")
+  print ("3: Multiplication")
+  print ("4: Division")
+  print ("5: Exponentiation")
+  print ("6: Modulo")
+  print ("7: Floor Function")  
+  Chosen_operation = input('Input Operation: ')
 
-if Chosen_operation == '1':
-  #Function for Addition
-  print(x + y)
-elif Chosen_operation == '2':
-  #Function for Subtraction
-  print(x - y)
-elif Chosen_operation == '3':
-  #Function for Multiplication
-  print (x * y)
-elif Chosen_operation == '4':
-  #Function for Division
-  print (x / y)
-else:
-  print('Error, Try Again')
+  while Chosen_operation not in ('1', '2', '3', '4','5','6','7'):
+    Chosen_operation = input('Please input another operation number: ')
+  
+  x = float(input("Input the first number: "))
+  y = float(input("Input the second number: "))
 
+  if Chosen_operation == '1':
+    #Function for Addition
+    print(x + y)
+  elif Chosen_operation == '2':
+    #Function for Subtraction
+    print(x - y)
+  elif Chosen_operation == '3':
+    #Function for Multiplication
+    print (x * y)
+  elif Chosen_operation == '4':
+    #Function for Division
+    print (x / y)
+  elif Chosen_operation == '5':
+    print(x**y)
+  elif Chosen_operation == '6':
+    print(x % y)
+  elif Chosen_operation == '7':
+    print(x//y)
 
+  AnotherOperation = input("Do you want to calculate again? (yes/no): ")
+  if AnotherOperation == 'no':
+    BooleanCheck = False
+  
 
 # Note to self:
 # Make sure that the inputs for this kind of program are in float(Decimals) or 
