@@ -38,9 +38,10 @@ while BooleanCheck:
     print(x//y)
 
   AnotherOperation = input("Do you want to calculate again? (yes/no): ")
-  if AnotherOperation == 'no':
-    BooleanCheck = False
-  
+  if AnotherOperation == 'yes':
+    BooleanCheck = True
+  elif AnotherOperation == 'no':
+   BooleanCheck = False  
 
 # Note to self:
 # Make sure that the inputs for this kind of program are in float(Decimals) or 
