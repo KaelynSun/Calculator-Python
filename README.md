@@ -1,3 +1,3 @@
 # Calculator
-Calculator CS101
+Calculator Project CS101
 Team: Kaelyn and Louis
