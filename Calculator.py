@@ -38,8 +38,14 @@ while BooleanCheck:
     print(x//y)
 
   AnotherOperation = input("Do you want to calculate again? (yes/no): ")
-  if AnotherOperation == 'no':
-    BooleanCheck = False
+
+  if AnotherOperation == 'yes':
+    BooleanCheck = True
+  elif AnotherOperation == 'no':
+   BooleanCheck = False  
+  else:
+    print("Run again")
+ 
   
 
 # Note to self:
