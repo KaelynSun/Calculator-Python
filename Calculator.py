@@ -12,7 +12,7 @@ while Boolean_check:
   print ("7: Integer Division")  
   Chosen_operation = input('Input Operation: ')
 
-  while Chosen_operation not in ('1', '2', '3', '4','5','6','7'):
+  while Chosen_operation not in range(1,8):
     Chosen_operation = input('Please input another operation number: ')
   
   x = float(input("Input the first number: "))
