@@ -1,6 +1,6 @@
-BooleanCheck = True
+Boolean_check = True
 
-while BooleanCheck:
+while Boolean_check:
   print ("Type the number for the chosen operation")
   print ("Numbers in decimal form (float) are possible")
   print ("1: Addition")
@@ -9,7 +9,7 @@ while BooleanCheck:
   print ("4: Division")
   print ("5: Exponentiation")
   print ("6: Modulo")
-  print ("7: Floor Function")  
+  print ("7: Integer Division")  
   Chosen_operation = input('Input Operation: ')
 
   while Chosen_operation not in ('1', '2', '3', '4','5','6','7'):
@@ -37,11 +37,11 @@ while BooleanCheck:
   elif Chosen_operation == '7':
     print(x//y)
 
-  AnotherOperation = input("Do you want to calculate again? (yes/no): ")
-  if AnotherOperation == 'yes':
-    BooleanCheck = True
+  Another_operation = input("Do you want to calculate again? (yes/no): ")
+  if Another_operation == 'yes':
+    Boolean_check = True
   elif AnotherOperation == 'no':
-   BooleanCheck = False  
+   Boolean_check = False  
 
 # Note to self:
 # Make sure that the inputs for this kind of program are in float(Decimals) or 
